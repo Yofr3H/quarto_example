@@ -1,0 +1,62 @@
+# Introducción
+
+Aquí se pone la introducción
+
+Ver @knuth84 for additional discussion of literate programming.
+
+```{r}
+1 + 1
+```
+
+
+
+## Conditional Content in Quarto
+
+::: {.content-visible when-format="html"}
+
+```{r}
+#| message: false
+
+library(plotly)
+library(ggplot2)
+
+p <- ggplot(mtcars, aes(wt, mpg))
+p <-  p + geom_point(aes(colour = factor(cyl)))
+
+ggplotly(p)
+```
+
+
+```{r}
+#| message: false
+#| fig-pos: "H"
+#| fig-width: 4
+#| fig-height: 3
+
+library(leaflet)
+
+# took this example from leaflet docs
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
+m  # Print the map
+
+```
+
+:::
+
+
+::: {.content-visible when-format="pdf"}
+
+```{r}
+
+library(plotly)
+library(ggplot2)
+
+p <- ggplot(mtcars, aes(wt, mpg))
+p <-  p + geom_point(aes(colour = factor(cyl)))
+
+ggplotly(p)
+```
+
+:::

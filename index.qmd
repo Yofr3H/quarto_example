@@ -1,0 +1,9 @@
+# Índice {.unnumbered}
+
+Aquí vá la introducción
+
+así se pone un enlace externo <https://quarto.org/docs/books>.
+
+```{r}
+1 + 1
+```

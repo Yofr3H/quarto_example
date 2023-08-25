@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "intro.html#conditional-content-in-quarto",
+    "href": "intro.html#conditional-content-in-quarto",
+    "title": "1  Introducción",
+    "section": "1.1 Conditional Content in Quarto",
+    "text": "1.1 Conditional Content in Quarto\n\nlibrary(plotly)\n\nWarning: package 'plotly' was built under R version 4.3.1\n\n\nWarning: package 'ggplot2' was built under R version 4.3.1\n\nlibrary(ggplot2)\n\np &lt;- ggplot(mtcars, aes(wt, mpg))\np &lt;-  p + geom_point(aes(colour = factor(cyl)))\n\nggplotly(p)\n\n\n\n\n\n\nlibrary(leaflet)\n\nWarning: package 'leaflet' was built under R version 4.3.1\n\n# took this example from leaflet docs\nm &lt;- leaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(lng=174.768, lat=-36.852, popup=\"The birthplace of R\")\nm  # Print the map\n\n\n\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "latex.html",
+    "href": "latex.html",
+    "title": "Tesis_skeleton",
+    "section": "",
+    "text": "Inline maths: f(x)=y\nInline text:\n\\begin{center}\nExample 1: The following paragraph (given in quotes) is an\nexample of centered alignment using the center environment.\n``La\\TeX{} is a document preparation system and document markup\nlanguage. \\LaTeX{} uses the \\TeX{} typesetting program for formatting\nits output, and is itself written in the \\TeX{} macro language.\n\\LaTeX{} is not the name of a particular (executable) typesetting program, but\nrefers to the suite of commands (\\TeX{} macros) which form the markup\nconventions used to typeset \\LaTeX{} documents.”\n\\end{center}\n’```"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "3  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]

@@ -1,0 +1,22 @@
+project:
+  type: book
+
+book:
+  title: "Tesis_skeleton"
+  author: "Yofre H. García G."
+  date: "26/6/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - latex.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html: default
+  pdf: default
+    
+
+
